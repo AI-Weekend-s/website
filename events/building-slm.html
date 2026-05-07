@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Weekends: Building SLM — Small Models, Big Impact. A masterclass on small language models held on 18 April 2026 in Coimbatore.">
+  <meta property="og:title" content="Building SLM: Small Models, Big Impact — AI Weekends">
+  <meta property="og:description" content="94 builders gathered to explore how compact, optimised language models are reshaping AI deployment.">
+  <meta property="og:type" content="article">
+
+  <title>Building SLM: Small Models, Big Impact — AI Weekends</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/event.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header scrolled" id="header">
+    <div class="container">
+      <a href="../index.html" class="logo" style="opacity:1;transform:none;pointer-events:auto;">
+        <img src="../assets/images/logo.png" alt="AI Weekends Logo" class="logo-img">
+        <span class="logo-text">AI Weekends</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#agenda" class="nav-link">What to Expect</a>
+        <a href="../index.html#past-events" class="nav-link">Past Events</a>
+        <a href="../index.html#community" class="nav-link">Join Us</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="../index.html#about" class="mobile-nav-link">About</a>
+    <a href="../index.html#agenda" class="mobile-nav-link">What to Expect</a>
+    <a href="../index.html#past-events" class="mobile-nav-link">Past Events</a>
+    <a href="../index.html#community" class="mobile-nav-link">Join Us</a>
+  </nav>
+
+  <main id="main-content">
+
+    <div class="event-hero">
+      <div class="container">
+        <a href="../index.html#past-events" class="event-back">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+          </svg>
+          All Events
+        </a>
+        <div class="event-hero-meta">
+          <span class="event-hero-tag">Masterclass</span>
+          <span class="event-hero-tag">18 Apr 2026</span>
+          <span class="event-hero-tag">Kovan Labs, IndiQube Echo, Coimbatore</span>
+        </div>
+        <h1 class="event-hero-title">Building SLM:<br>Small Models, Big Impact</h1>
+      </div>
+    </div>
+
+    <article class="event-article section">
+      <div class="container event-article-container">
+
+        <div class="event-writeup">
+
+          <p class="event-lead">
+            On a Saturday morning in April, 94 developers, product managers, founders, and designers packed into Kovan Labs, IndiQube Echo for a session that made the case for thinking small. The premise: in a landscape obsessed with scale, the most practical AI breakthroughs are happening at the edge.
+          </p>
+
+          <h2>Setting the Stage</h2>
+          <p>
+            The session opened with a question the room had clearly been sitting with: why reach for a 70-billion-parameter model when a well-tuned 7-billion one can outperform it on your specific task — at a fraction of the cost and latency? Speaker Sanju Sivalingam, founder of dun and ThisUX and co-founder of Unitedby.AI, framed the morning around that tension.
+          </p>
+          <p>
+            Sanju brought a rare combination of product intuition and technical depth. Before the first slide, he polled the room on how many had deployed a model in production. The answer shaped how he pitched the rest of the session — less theory, more decisions.
+          </p>
+
+          <h2>The AI Landscape and the SLM Shift</h2>
+          <p>
+            The first segment traced how the industry arrived here. Large language models grabbed the headlines, but the operational realities — GPU bills, latency, data privacy requirements — have quietly pushed practitioners toward compact alternatives. Sanju walked through the architecture differences that matter in practice: how parameter count, quantisation, and context window interact to determine what a model is actually good for.
+          </p>
+          <p>
+            The key insight from this segment: model selection isn't a benchmarks exercise. It's a product decision. The right question isn't "which model scores highest?" but "which model fails least badly on my worst-case inputs?"
+          </p>
+
+          <h2>Strategy and Selection</h2>
+          <p>
+            The second segment got tactical. Sanju walked through a framework for evaluating SLMs for real deployments — covering latency budgets, privacy constraints, offline requirements, and cost per inference. He demonstrated how to read benchmarks critically, flagging the gap between leaderboard performance and production behaviour.
+          </p>
+          <p>
+            For the product and design folks in the room, this segment landed differently: SLM selection is a design constraint, not a backend decision. The model's capabilities define what your product can promise users.
+          </p>
+
+          <h2>Data Curation and Fine-Tuning</h2>
+          <p>
+            The third segment dove into what separates a capable model from a useful one: fine-tuning. Sanju covered dataset curation — why quality consistently beats quantity — before moving to optimisation techniques. LoRA and QLoRA got hands-on treatment, with real examples of how parameter-efficient fine-tuning lets teams adapt foundation models without the infrastructure overhead of full retraining.
+          </p>
+          <p>
+            This was the most technically dense part of the session, and it showed in the room. Questions started stacking up.
+          </p>
+
+          <h2>Hands-On Implementation</h2>
+          <p>
+            The final segment was a practical fine-tuning lab. Attendees who had brought laptops worked through a structured implementation — from infrastructure choices to a first deployment. Sanju and the AI Weekends team circulated to help debug environment issues and talk through architecture tradeoffs in real time.
+          </p>
+          <p>
+            The session closed with a conversation about where SLMs are headed: on-device inference, domain-specific foundation models, and the emerging pattern of composing small specialists rather than relying on one large generalist. For a room full of builders, it was a practical north star.
+          </p>
+
+          <div class="event-speaker-card">
+            <div class="event-speaker-info">
+              <h3>Speaker</h3>
+              <div class="event-speaker-name-row">
+                <p class="event-speaker-name">Sanju Sivalingam</p>
+                <a href="https://www.linkedin.com/in/imsanju/" target="_blank" rel="noopener noreferrer" class="event-speaker-linkedin" aria-label="Sanju Sivalingam on LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+              </div>
+              <p class="event-speaker-title">Founder, dun &amp; ThisUX &nbsp;·&nbsp; Co-founder, Unitedby.AI</p>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="event-sidebar">
+          <div class="event-sidebar-card">
+            <h3>Event Details</h3>
+            <ul class="event-details-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                Saturday, 18 April 2026
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                10:00 AM – 1:00 PM
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                Kovan Labs, IndiQube Echo, Coimbatore
+              </li>
+            </ul>
+            <a href="https://luma.com/iwg9ckq5" target="_blank" rel="noopener noreferrer" class="event-sidebar-cta">
+              View on Luma
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            </a>
+          </div>
+
+          <div class="event-sidebar-card">
+            <h3>Hosted by</h3>
+            <ul class="event-hosts-list">
+              <li>Gokul Dhamodaran</li>
+              <li>Akshay Kumar</li>
+              <li>Jeeththenthar La</li>
+            </ul>
+          </div>
+
+          <div class="event-sidebar-card event-nav-card">
+            <h3>More Events</h3>
+            <a href="decoding-ai-stack.html" class="event-nav-link">
+              <span>Decoding the Modern AI Stack</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </a>
+            <a href="v0-prompt-to-production.html" class="event-nav-link">
+              <span>v0 Prompt to Production</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="../assets/images/logo.png" alt="AI Weekends" class="logo-img">
+          <span class="footer-logo-text">AI Weekends</span>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html#about" class="footer-link">About</a>
+          <a href="../index.html#agenda" class="footer-link">What to Expect</a>
+          <a href="../index.html#past-events" class="footer-link">Past Events</a>
+          <a href="../index.html#community" class="footer-link">Community</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AI Weekends. All rights reserved.</p>
+        <p class="footer-credits">
+          Made with
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" /></svg>
+          for the community by
+          <img src="../assets/images/kovan-labs-logo.svg" alt="Kovan Labs" class="kovan-logo">
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
