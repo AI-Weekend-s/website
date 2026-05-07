@@ -66,7 +66,7 @@ function initScrollAnimations() {
   
   const observer = new IntersectionObserver(animate, options);
   
-  document.querySelectorAll('.timeline-item, .highlight-card, .about-feature, .event-card').forEach((el, i) => {
+  document.querySelectorAll('.timeline-item, .highlight-card, .about-feature').forEach((el, i) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = `opacity 0.6s ease ${i * 0.1}s, transform 0.6s ease ${i * 0.1}s`;

@@ -1342,6 +1342,7 @@ button {
   display: flex;
   align-items: center;
   gap: var(--space-8);
+  animation: fadeInUp 0.5s ease both;
   background: var(--color-white);
   border-radius: var(--radius-2xl);
   padding: var(--space-8);
@@ -1351,6 +1352,9 @@ button {
   overflow: hidden;
   color: inherit;
 }
+
+.events-list .event-card:nth-child(2) { animation-delay: 0.1s; }
+.events-list .event-card:nth-child(3) { animation-delay: 0.2s; }
 
 .event-card::before {
   content: '';
